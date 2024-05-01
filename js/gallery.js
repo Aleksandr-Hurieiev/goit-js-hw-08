@@ -86,6 +86,7 @@ gallery.insertAdjacentHTML("beforeend", item);
 gallery.addEventListener("click", selectColor);
 
 function selectColor(event) {
+  event.preventDefault() 
   if (event.target.tagName !== "IMG") {
     return
   }
